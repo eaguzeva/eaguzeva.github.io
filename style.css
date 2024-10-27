@@ -1,0 +1,19 @@
+body {
+    background-image: url('BackgroundPhoto.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main-window {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.navigation {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
