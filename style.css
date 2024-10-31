@@ -1,5 +1,5 @@
 body {
-    background-image: url('BackgroundPnoto.jpg');
+    background-image: url('images/BackgroundPnoto.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -139,4 +139,56 @@ a.navigation-link:visited {
   a.navigation-link:active {
     color: #000000;
   }
-  
+  ol, ul {
+    margin: 10px 40px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 8px;
+    padding-left: 4px;
+}
+
+li ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+li ul li {
+    margin-bottom: 4px;
+}
+
+li li ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ol li, ul li {
+    transition: color 0.3s;
+}
+
+ol li:hover, ul li:hover {
+    color: #f0e68c;
+    cursor: pointer;
+}
+img {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    border: 2px solid #555;
+}
+
+img:hover {
+    border-color: #d4af37;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
