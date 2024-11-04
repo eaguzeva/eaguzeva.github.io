@@ -1,5 +1,5 @@
 body {
-    background-image: url('images/BackgroundPnoto.jpg');
+    background-image: url('images/BackgroundPhoto_form.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -14,7 +14,7 @@ p {
 h1 {
     color: white;
 }
-h2 {
+h4 {
     color: white;
 }
 a:link {
@@ -29,8 +29,9 @@ color:#000000;
 .main-window {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 60%;
     background-color: rgba(36, 55, 44, 0.9);
+    padding: 5px 20px 20px 20px;
 }
 
 .navigation {
@@ -178,25 +179,10 @@ ol li:hover, ul li:hover {
     color: #f0e68c;
     cursor: pointer;
 }
-img {
-    display: block;
-    margin-top: 5px;
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    border: 2px solid #555;
-}
-
-img:hover {
-    border-color: #d4af37;
-    transform: scale(1.05);
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
 .navigation_2 {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 83%;
     background-color: rgba(255, 255, 255, 0.5);
     padding:0;
     list-style: none;
@@ -253,4 +239,93 @@ img:hover {
     animation: 500ms ease-in-out 0s bounceIn;
     opacity: 1;
     border: 6px solid #0a4e43;    
-}    
+/* Reset some default styles */
+body, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Main window styling */
+.main-window {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Form heading */
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling for radio and checkbox inputs */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Buttons styling */
+input[type="reset"],
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Additional information area */
+textarea {
+    resize: vertical;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .main-window,
+    form {
+        width: 90%;
+        padding: 10px;
+    }
+}
+

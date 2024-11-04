@@ -31,6 +31,7 @@ color:#000000;
     margin-right: auto;
     width: 80%;
     background-color: rgba(36, 55, 44, 0.9);
+    padding: 5px 20px 20px 20px;
 }
 
 .navigation {
@@ -178,25 +179,10 @@ ol li:hover, ul li:hover {
     color: #f0e68c;
     cursor: pointer;
 }
-img {
-    display: block;
-    margin-top: 5px;
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    border: 2px solid #555;
-}
-
-img:hover {
-    border-color: #d4af37;
-    transform: scale(1.05);
-    transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
 .navigation_2 {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 83%;
     background-color: rgba(255, 255, 255, 0.5);
     padding:0;
     list-style: none;

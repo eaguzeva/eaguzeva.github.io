@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HollowFan</title>
+    <link rel="stylesheet" type="text/css" href="style_form.css">
+</head>
+<body>
+    <ul class="navigation">
+        <li><a href="index.html" target="_self" class="navigation-link"><div class="navigation-box"><b>Главная</b></div></a></li></ul>
+    <div class="main-window">
+        <h4>Если у Вас возникло желание с дополнением этого сайта, заполните форму и нажмите кнопку отправить. Мы свяжемся с Вами в ближайшее время </h4>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <p><input type="hidden"  name="q" value="search"></p>
+        <p>ФИО: <input type="text" name="last_name" size="30" value=""></p>
+        <p>Возраст: <input type="number" name="age" size="20" value="0" max="100" min="0"></p>
+        <p>Давно играешь?
+            <input type="radio" name="place" value="Moscow">Только скачал
+            <input type="radio" name="place" value="Nizhny" checked>Играю на выходных
+            <input type="radio" name="place" value="Nizhny" checked>Я мастер
+        </p>
+        <p>Хорошо знаком с 
+            <input type="checkbox" name="experience"  checked>HTML
+            <input type="checkbox" name="experience"  checked>CSS
+            <input type="checkbox" name="experience"  checked>JavaScript
+        </p>
+        <p>Наличие свободного врмени
+            <select name="languages">
+                <option value="Владею свободно">Очень много</option>
+                <option value="Читаю и перевожу со словарем">Пару свободных дней в неделю</option>
+                <option value="Читаю и перевожу со словарем">Пару часов в неделю</option>
+                <option value="Читаю и перевожу со словарем">Практически нет</option>
+            </select>
+        </p>
+        <p>Чем бы ты хотел помочь?
+            <select name="010_mode">
+                <option value="a">Знаю больше об игре</option>
+                <option value="w">Знаю как сделать лучше сайт</option>
+            </select>
+        </p>
+        <input type="hidden" name="function" value="page">
+        <input type="hidden" name="page_id" value="3">
+        <p>
+            <input type="reset" name="Reset" value="Обновить">
+            <input type="submit" name="submit" value="Отправить">
+        </p>
+        <p>Сообщение модератору:
+            <br>
+            <textarea cols="80" rows="4" name="textarea">например анекдот</textarea>
+        </p>
+        <p>Придумай пароль: <input type="password" name="password" size="9" value=""></p>
+        <p>Дата: <input type="date" name="user_date" value=''></p>
+    </form>
+    </div>
+</body>
+</html>
