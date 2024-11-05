@@ -238,8 +238,8 @@ ol li:hover, ul li:hover {
 .navigation_2 li:hover:after {
     animation: 500ms ease-in-out 0s bounceIn;
     opacity: 1;
-    border: 6px solid #0a4e43;    
-/* Reset some default styles */
+    border: 6px solid #0a4e43; 
+
 body, h3, h4, p {
     margin: 0;
     padding: 0;
@@ -328,4 +328,3 @@ textarea {
         padding: 10px;
     }
 }
-

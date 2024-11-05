@@ -6,7 +6,7 @@ body {
     font-family: helvetica,arial,sans-serif;
     
 }
-p {
+label, p {
  color: white;
  font-size: 20px;
  text-align: center;
@@ -16,6 +16,7 @@ h1 {
 }
 h2 {
     color: white;
+    text-align: center;
 }
 a:link {
     color: white;
