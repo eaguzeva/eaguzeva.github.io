@@ -12,13 +12,14 @@
     <div class="main-window">
         <h4>Если у Вас возникло желание с дополнением этого сайта, заполните форму и нажмите кнопку отправить. Мы свяжемся с Вами в ближайшее время </h4>
     <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
-        <p><input type="hidden"  name="q" value="search"></p>
-        <p>ФИО: <input type="text" name="last_name" size="30" value=""></p>
-        <p>Возраст: <input type="number" name="age" size="20" value="0" max="100" min="0"></p>
+        <p><input type="hidden"  name="hollowknight" value="search"></p>
+        <p>ФИО: <input type="text" name="last_name" size="30" value="Гузева Екатерина"></p>
+        <p>Возраст: <input type="number" name="age" size="20" value="18" max="100" min="0"></p>
+        <p>Почта: <input type="email" name="mail" size="20" value="eguzeva@edu.hse.ru"> </p>
         <p>Давно играешь?
-            <input type="radio" name="place" value="Moscow">Только скачал
-            <input type="radio" name="place" value="Nizhny" checked>Играю на выходных
-            <input type="radio" name="place" value="Nizhny" checked>Я мастер
+            <input type="radio" name="place">Только скачал
+            <input type="radio" name="place"  checked>Играю на выходных
+            <input type="radio" name="place"  checked>Я мастер
         </p>
         <p>Хорошо знаком с 
             <input type="checkbox" name="experience"  checked>HTML
@@ -41,16 +42,16 @@
         </p>
         <input type="hidden" name="function" value="page">
         <input type="hidden" name="page_id" value="3">
-        <p>
-            <input type="reset" name="Reset" value="Обновить">
-            <input type="submit" name="submit" value="Отправить">
-        </p>
         <p>Сообщение модератору:
             <br>
             <textarea cols="80" rows="4" name="textarea">например анекдот</textarea>
         </p>
         <p>Придумай пароль: <input type="password" name="password" size="9" value=""></p>
         <p>Дата: <input type="date" name="user_date" value=''></p>
+        <p>
+            <input type="reset" name="Reset" value="Обновить">
+            <input type="submit" name="submit" value="Отправить">
+        </p>
     </form>
     </div>
 </body>

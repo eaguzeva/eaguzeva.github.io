@@ -39,12 +39,7 @@
             margin-left: 415px;
             margin-top: -215px;
         }
-        #button {
-            display: block;
-            margin: 60px 500px;
-            padding: 10px 30px;
-            font-size: 16px;
-        }
+
     </style>
 </head>
 <body>
@@ -56,28 +51,5 @@
     <div class="block5" id="birthDate">25.02.2006</div>
     <div class="photo1"><img src="images/PhotoMenya.jpg" width="145"/></div>
     <div class="photo2"><img src="images/чб.jpg" width="54"/></div>
-
-    <button id="button">Кликните здесь, чтобы изменить на латиницу</button>
-
-    <script>
-        let isRussian = true;
-
-        document.getElementById("button").addEventListener("click", function() {
-            if (isRussian) {
-                document.getElementById("surname").textContent = "Guzeva";
-                document.getElementById("name").textContent = "Yekaterina";
-                document.getElementById("patronymic").textContent = "Andreevna";
-                document.getElementById("nationality").textContent = "Russian";
-                this.textContent = "Кликните здесь, чтобы изменить на кириллицу";
-            } else {
-                document.getElementById("surname").textContent = "Гузева";
-                document.getElementById("name").textContent = "Екатерина";
-                document.getElementById("patronymic").textContent = "Андреевна";
-                document.getElementById("nationality").textContent = "русская";
-                this.textContent = "Кликните здесь, чтобы изменить на латиницу";
-            }
-            isRussian = !isRussian;
-        });
-    </script>
 </body>
 </html>
