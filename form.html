@@ -4,55 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HollowFan</title>
-    <link rel="stylesheet" type="text/css" href="style_form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-    <ul class="navigation">
-        <li><a href="index.html" target="_self" class="navigation-link"><div class="navigation-box"><b>Главная</b></div></a></li></ul>
-    <div class="main-window">
-        <h4>Если у Вас возникло желание с дополнением этого сайта, заполните форму и нажмите кнопку отправить. Мы свяжемся с Вами в ближайшее время </h4>
-    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank" method="get">
-        <p><input type="hidden"  name="q" value="search"></p>
-        <p>ФИО: <input type="text" name="last_name" size="30" value="Гузева Екатерина"></p>
-        <p>Возраст: <input type="number" name="age" size="20" value="18" max="100" min="0"></p>
-        <p>Почта: <input type="email" name="mail" size="20" value="eguzeva@edu.hse.ru"> </p>
-        <p>Давно играешь?
-            <input type="radio" name="place">Только скачал
-            <input type="radio" name="place"  checked>Играю на выходных
-            <input type="radio" name="place"  checked>Я мастер
-        </p>
-        <p>Хорошо знаком с 
-            <input type="checkbox" name="experience"  checked>HTML
-            <input type="checkbox" name="experience"  checked>CSS
-            <input type="checkbox" name="experience"  checked>JavaScript
-        </p>
-        <p>Наличие свободного врмени
-            <select name="languages">
-                <option value="Владею свободно">Очень много</option>
-                <option value="Читаю и перевожу со словарем">Пару свободных дней в неделю</option>
-                <option value="Читаю и перевожу со словарем">Пару часов в неделю</option>
-                <option value="Читаю и перевожу со словарем">Практически нет</option>
-            </select>
-        </p>
-        <p>Чем бы ты хотел помочь?
-            <select name="010_mode">
-                <option value="a">Знаю больше об игре</option>
-                <option value="w">Знаю как сделать лучше сайт</option>
-            </select>
-        </p>
-        <input type="hidden" name="function" value="page">
-        <input type="hidden" name="page_id" value="3">
-        <p>Сообщение модератору:
-            <br>
-            <textarea cols="80" rows="4" name="textarea">например анекдот</textarea>
-        </p>
-        <p>Придумай пароль: <input type="password" name="password" size="9" value=""></p>
-        <p>Дата: <input type="date" name="user_date" value=''></p>
-        <p>
-            <input type="reset" name="Reset" value="Обновить">
-            <input type="submit" name="submit" value="Отправить">
-        </p>
-    </form>
+<body style="background: linear-gradient(to bottom, #567da4, #e9ecef);" class="bg-light">
+    <div class="card shadow-lg border-0" style="margin: 20px; border-radius: 10px;">
+        <div class="card-body" style="padding: 20px;">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"> <a class="nav-link" href="index.html">Главная</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="locations.html">Локации</a></li>
+                <li class="nav-item"> <a class="nav-link " href="shop.html">Магазин</a></li>
+                <li class="nav-item"> <a class="nav-link active" href="form.html">Форма связи</a></li>
+    
+            </ul>
+        </div>
     </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    </nav>
+    <div class="container mt-5">
+        <h4 class="text-center mb-4">
+            Если у Вас возникло желание с дополнением этого сайта, заполните форму и нажмите кнопку отправить. Мы свяжемся с Вами в ближайшее время.
+        </h4>
+
+        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank" method="get" class="needs-validation" novalidate>
+            <input type="hidden" name="q" value="search">
+            <div class="mb-3">
+                <label for="last_name" class="form-label">ФИО</label>
+                <input type="text" id="last_name" name="last_name" class="form-control" value="Гузева Екатерина" required>
+            </div>
+            <div class="mb-3">
+                <label for="age" class="form-label">Возраст</label>
+                <input type="number" id="age" name="age" class="form-control" value="18" min="0" max="100" required>
+            </div>
+            <div class="mb-3">
+                <label for="mail" class="form-label">Почта</label>
+                <input type="email" id="mail" name="mail" class="form-control" value="eguzeva@edu.hse.ru" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Давно играешь?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="place" id="place1" value="Только скачал">
+                    <label class="form-check-label" for="place1">Только скачал</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="place" id="place2" value="Играю на выходных" checked>
+                    <label class="form-check-label" for="place2">Играю на выходных</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="place" id="place3" value="Я мастер" checked>
+                    <label class="form-check-label" for="place3">Я мастер</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Хорошо знаком с</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="experience" id="html" checked>
+                    <label class="form-check-label" for="html">HTML</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="experience" id="css" checked>
+                    <label class="form-check-label" for="css">CSS</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="experience" id="javascript" checked>
+                    <label class="form-check-label" for="javascript">JavaScript</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="languages" class="form-label">Наличие свободного времени</label>
+                <select name="languages" id="languages" class="form-select">
+                    <option value="Владею свободно">Очень много</option>
+                    <option value="Читаю и перевожу со словарем">Пару свободных дней в неделю</option>
+                    <option value="Читаю и перевожу со словарем">Пару часов в неделю</option>
+                    <option value="Читаю и перевожу со словарем">Практически нет</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="010_mode" class="form-label">Чем бы ты хотел помочь?</label>
+                <select name="010_mode" id="010_mode" class="form-select">
+                    <option value="a">Знаю больше об игре</option>
+                    <option value="w">Знаю как сделать лучше сайт</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="textarea" class="form-label">Сообщение модератору</label>
+                <textarea id="textarea" name="textarea" class="form-control" rows="4">например анекдот</textarea>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Придумай пароль</label>
+                <input type="password" id="password" name="password" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="user_date" class="form-label">Дата</label>
+                <input type="date" id="user_date" name="user_date" class="form-control">
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="reset" class="btn btn-secondary">Обновить</button>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-9ndCyUaK3ci80cdi5p3GfV7T2xF1r9sBImR9OmRxRYGwvzB73E08Sg0K4p/WeOr4" crossorigin="anonymous"></script>
 </body>
 </html>
