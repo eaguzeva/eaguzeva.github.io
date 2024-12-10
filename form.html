@@ -6,77 +6,91 @@
     <title>HollowFan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body style="background: linear-gradient(to bottom, #567da4, #e9ecef);" class="bg-light">
-    <div class="card shadow-lg border-0" style="margin: 20px; border-radius: 10px;">
-        <div class="card-body" style="padding: 20px;">
-            <ul class="nav nav-tabs">
-                <li class="nav-item"> <a class="nav-link" href="index.html">Главная</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="locations.html">Локации</a></li>
-                <li class="nav-item"> <a class="nav-link " href="shop.html">Магазин</a></li>
-                <li class="nav-item"> <a class="nav-link active" href="form.html">Форма связи</a></li>
-    
-            </ul>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    </nav>
+<body class="bg-secondary text-white">
+    <a id="top"></a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav justify-content-center w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locations.html">Локации игры</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Магазин</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="form.html">Обратная связь</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="container mt-5">
-        <h4 class="text-center mb-4">
-            Если у Вас возникло желание с дополнением этого сайта, заполните форму и нажмите кнопку отправить. Мы свяжемся с Вами в ближайшее время.
-        </h4>
+        <h1 class="text-center">Анкета для тех, кто хочет помочь сайту</h1>
+        <div class="card p-4 bg-primary-subtle">
 
-        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank" method="get" class="needs-validation" novalidate>
-            <input type="hidden" name="q" value="search">
-            <div class="mb-3">
-                <label for="last_name" class="form-label">ФИО</label>
-                <input type="text" id="last_name" name="last_name" class="form-control" value="Гузева Екатерина" required>
-            </div>
-            <div class="mb-3">
-                <label for="age" class="form-label">Возраст</label>
-                <input type="number" id="age" name="age" class="form-control" value="18" min="0" max="100" required>
-            </div>
-            <div class="mb-3">
-                <label for="mail" class="form-label">Почта</label>
-                <input type="email" id="mail" name="mail" class="form-control" value="eguzeva@edu.hse.ru" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Давно играешь?</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="place" id="place1" value="Только скачал">
-                    <label class="form-check-label" for="place1">Только скачал</label>
+            <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank" method="get" class="needs-validation" novalidate>
+                <input type="hidden" name="q" value="search">
+                <div class="mb-3">
+                    <label for="last_name" class="form-label">ФИО</label>
+                    <input type="text" id="last_name" name="last_name" class="form-control" value="Гузева Екатерина" required>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="place" id="place2" value="Играю на выходных" checked>
-                    <label class="form-check-label" for="place2">Играю на выходных</label>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Возраст</label>
+                    <input type="number" id="age" name="age" class="form-control" value="18" min="0" max="100" required>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="place" id="place3" value="Я мастер" checked>
-                    <label class="form-check-label" for="place3">Я мастер</label>
+                <div class="mb-3">
+                    <label for="mail" class="form-label">Почта</label>
+                    <input type="email" id="mail" name="mail" class="form-control" value="eguzeva@edu.hse.ru" required>
                 </div>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Хорошо знаком с</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="experience" id="html" checked>
-                    <label class="form-check-label" for="html">HTML</label>
+                <div class="mb-3">
+                    <label class="form-label">Давно играешь?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="place" id="place1" value="Только скачал">
+                        <label class="form-check-label" for="place1">Только скачал</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="place" id="place2" value="Играю на выходных" checked>
+                        <label class="form-check-label" for="place2">Играю на выходных</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="place" id="place3" value="Я мастер" checked>
+                        <label class="form-check-label" for="place3">Я мастер</label>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="experience" id="css" checked>
-                    <label class="form-check-label" for="css">CSS</label>
+                <div class="mb-3">
+                    <label class="form-label">Хорошо знаком с</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="experience" id="html" checked>
+                        <label class="form-check-label" for="html">HTML</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="experience" id="css" checked>
+                        <label class="form-check-label" for="css">CSS</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="experience" id="javascript" checked>
+                        <label class="form-check-label" for="javascript">JavaScript</label>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="experience" id="javascript" checked>
-                    <label class="form-check-label" for="javascript">JavaScript</label>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="languages" class="form-label">Наличие свободного времени</label>
-                <select name="languages" id="languages" class="form-select">
-                    <option value="Владею свободно">Очень много</option>
-                    <option value="Читаю и перевожу со словарем">Пару свободных дней в неделю</option>
-                    <option value="Читаю и перевожу со словарем">Пару часов в неделю</option>
-                    <option value="Читаю и перевожу со словарем">Практически нет</option>
-                </select>
+                <div class="mb-3">
+                    <label for="languages" class="form-label">Наличие свободного времени</label>
+                    <select name="languages" id="languages" class="form-select">
+                        <option value="Владею свободно">Очень много</option>
+                        <option value="Читаю и перевожу со словарем">Пару свободных дней в неделю</option>
+                        <option value="Читаю и перевожу со словарем">Пару часов в неделю</option>
+                        <option value="Читаю и перевожу со словарем">Практически нет</option>
+                    </select>
             </div>
 
             <div class="mb-3">
@@ -99,13 +113,19 @@
                 <label for="user_date" class="form-label">Дата</label>
                 <input type="date" id="user_date" name="user_date" class="form-control">
             </div>
+            
             <div class="d-flex justify-content-between">
                 <button type="reset" class="btn btn-secondary">Обновить</button>
                 <button type="submit" class="btn btn-primary">Отправить</button>
             </div>
         </form>
     </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-9ndCyUaK3ci80cdi5p3GfV7T2xF1r9sBImR9OmRxRYGwvzB73E08Sg0K4p/WeOr4" crossorigin="anonymous"></script>
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">HollowFan &copy; 2024</p>
+        <a href="#top" class="text-white text-decoration-none">Наверх</a>
+    </footer>
 </body>
 </html>
