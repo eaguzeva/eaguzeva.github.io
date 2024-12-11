@@ -61,25 +61,18 @@
     </header>
     <main class="container py-4">
         <h1 class="text-center mb-4">Магазин</h1>
-        <div class="filter-options d-flex justify-content-center gap-3">
+        <div class="d-flex justify-content-center gap-3 mb-4">
             <label>
-                <input type="radio" id="sortPrice" name="filterOption" onchange="handleSort()"> Цена
+                <input type="radio" id="sortPrice" name="sortOption" onchange="handleSort()"> По цене
             </label>
             <label>
-                <input type="radio" id="sortTitle" name="filterOption" checked onchange="handleSort()"> Название
+                <input type="radio" id="sortTitle" name="sortOption" checked onchange="handleSort()"> По названию
             </label>
-            <input type="text" id="filterSearch" class="form-control w-50" placeholder="Поиск..." oninput="handleSearch()">
         </div>
-        <ul class="product-list d-flex flex-wrap justify-content-around p-0 bg-light" id="productContainer">
-
-        </ul>
+        <ul class="product-list d-flex flex-wrap justify-content-around p-0 bg-light" id="productContainer"></ul>
     </main>
     <div class="container">
         <div class="card-body">
-            <h5 class="card-title text-center">Магазин</h5>
-             <input type="radio" id="price" name="sort" onchange="sort()"> price  
-             <input type="radio" id="title" name="sort" checked="" onchange="sort()"> title 
-             <input type="text" id="search" name="search" onchange="search()"> поиск  
             <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
 
 
@@ -88,7 +81,8 @@
                     <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
                         <img style="width: 180px" class="align-self-center" src="images/фигурка1.webp">
                         <h5 class="card-title">Фигурка жука-рыцаря</h5>
-                        <p class="card-text"> Смоляная фигурка рыцаря в высоту 6.5 дюймов. Фигурка изготовлена и раскрашена вручную. Цена 39$.</p>
+                        <p class="card-text"> Смоляная фигурка рыцаря в высоту 6.5 дюймов. Фигурка изготовлена и раскрашена вручную.</p>
+                        <p class="card-text text-primary">Цена: 39 $.</p>
                         <input type="hidden" name="vendor_code" value="4448e">
                         <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0" min = "0"></p>
                     </li>
@@ -96,7 +90,8 @@
                     <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
                         <img style="width: 180px" class="align-self-center" src="images/фигурка2.webp">
                         <h5 class="card-title">Фигурка Хорнет</h5>
-                        <p class="card-text">Смоляная фигурка босса Хорнет в высоту 9.6 дюймов. Фигурка изготовлена и раскрашена вручную. Цена 36$.</p>
+                        <p class="card-text">Смоляная фигурка босса Хорнет в высоту 9.6 дюймов. Фигурка изготовлена и раскрашена вручную.</p>
+                        <p class="card-text text-primary">Цена: 36 $.</p>
                         <input type="hidden" name="vendor_code" value="44410e">
                         <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0" min = "0"></p>
                     </li>
@@ -104,7 +99,8 @@
                     <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
                         <img style="width: 180px" class="align-self-center" src="images/фигурка3.webp">
                         <h5 class="card-title">Фигурка личинки</h5>
-                        <p class="card-text">Смоляная фигурка личинки в высоту 3.2 дюйма. Говорят, что личинки приносят удачу.  Цена 12$.</p>
+                        <p class="card-text">Смоляная фигурка личинки в высоту 3.2 дюйма. Говорят, что личинки приносят удачу.</p>
+                        <p class="card-text text-primary">Цена: 12 $.</p>
                         <input type="hidden" name="vendor_code" value="4447e">
                         <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0" min = "0"></p>
                     </li>
@@ -112,7 +108,8 @@
                     <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
                         <img style="width: 180px" class="align-self-center" src="images/пластинка1.webp">
                         <h5 class="card-title">2 виниловые пластинки чб</h5>
-                        <p class="card-text">Двухпластинчатый релиз Ghost Ramp с оригинальным саундтреком к фильму «Hollow Knight» Кристофера Ларкина включает 26 треков, записанных на двух дисках с картинками. Каждый экземпляр поставляется с кодом загрузки, напечатанным на карточке внутри обложки.  Цена 39$.</p>
+                        <p class="card-text">Двухпластинчатый релиз Ghost Ramp с оригинальным саундтреком к фильму «Hollow Knight» Кристофера Ларкина включает 26 треков, записанных на двух дисках с картинками. Каждый экземпляр поставляется с кодом загрузки, напечатанным на карточке внутри обложки.</p>
+                        <p class="card-text text-primary">Цена: 39 $.</p>
                         <input type="hidden" name="vendor_code" value="222">
                         <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0" min = "0"></p>
                     </li>
@@ -120,7 +117,8 @@
                     <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
                         <img style="width: 180px" class="align-self-center" src="images/пластинка2.webp">
                         <h5 class="card-title">Виниловая пластинка Gods & Nightmares</h5>
-                        <p class="card-text">Отправляйтесь в самые дальние уголки Hallownest с совершенно новой коллекцией из 15 эпических треков от Ghost Ramp. Встречайте падших королей, доблестных рыцарей и древних богов в этой мощной оркестровой коллекции, которая объединяет все дополнительные треки Кристофера Ларкина из Hollow Knight и включает совершенно новую аранжировку Pale Court. Цена 29$.</p>
+                        <p class="card-text">Отправляйтесь в самые дальние уголки Hallownest с совершенно новой коллекцией из 15 эпических треков от Ghost Ramp. Встречайте падших королей, доблестных рыцарей и древних богов в этой мощной оркестровой коллекции, которая объединяет все дополнительные треки Кристофера Ларкина из Hollow Knight и включает совершенно новую аранжировку Pale Court.</p>
+                        <p class="card-text text-primary">Цена: 29 $.</p>
                         <input type="hidden" name="vendor_code" value="333">
                         <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0" min = "0"></p>
                     </li>
@@ -128,14 +126,16 @@
                     <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
                         <img style="width: 180px" class="align-self-center" src="images/пластинка3.webp">
                         <h5 class="card-title">2 виниловые пластинки пианино</h5>
-                        <p class="card-text">В сотрудничестве с композитором Кристофером Ларкиным и Team Cherry продюсер и аранжировщик Дэвид Пикок и пианист Августин Маюга Гонсалес снова объединились, чтобы создать 15 великолепных интерпретаций любимых произведений из Hollow Knight в этой постановке Materia Collective. Этот альбом на 2 виниловых пластинках отпечатан на полупрозрачном виниле «Infected Orange» плотностью 180 г и содержит 24-страничный художественный буклет с иллюстрациями от Nise. Цена 54$.</p>
+                        <p class="card-text">В сотрудничестве с композитором Кристофером Ларкиным и Team Cherry продюсер и аранжировщик Дэвид Пикок и пианист Августин Маюга Гонсалес снова объединились, чтобы создать 15 великолепных интерпретаций любимых произведений из Hollow Knight в этой постановке Materia Collective. Этот альбом на 2 виниловых пластинках отпечатан на полупрозрачном виниле «Infected Orange» плотностью 180 г и содержит 24-страничный художественный буклет с иллюстрациями от Nise.</p>
+                        <p class="card-text text-primary">Цена: 54 $.</p>
                         <input type="hidden" name="vendor_code" value="4446e">
                         <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0" min = "0"></p>
                     </li>  
                     <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
                         <img style="width: 180px" class="align-self-center" src="images/футболка1.webp">
                         <h5 class="card-title">Футболка "Вечное Царство"</h5>
-                        <p class="card-text">Эта официальная футболка Hollow Knight — классический дизайн герба от Джона Кея. (Унисекс XS-4X — цвет: темно-серый материал: поли-хлопок) Каждая футболка поставляется с бонусной наклейкой. Цена 39$.</p>
+                        <p class="card-text">Эта официальная футболка Hollow Knight — классический дизайн герба от Джона Кея. (Унисекс XS-4X — цвет: темно-серый материал: поли-хлопок) Каждая футболка поставляется с бонусной наклейкой.</p>
+                        <p class="card-text text-primary">Цена: 39 $.</p>
                         <input type="hidden" name="vendor_code" value="444e">
                         <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0" min = "0"></p>
                     </li>
@@ -143,7 +143,8 @@
                     <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
                         <img style="width: 180px" class="align-self-center" src="images/футболка2.webp">
                         <h5 class="card-title">Футболка Хорнет</h5>
-                        <p class="card-text">Может ли она быть... Охотницей? Эта официальная  футболка Hollow Knight  была разработана Ilustrata. (Унисекс XS-4X — цвет: темно-серый материал: поли-хлопок) Каждая футболка поставляется с бонусной наклейкой. Цена 36$.</p>
+                        <p class="card-text">Может ли она быть... Охотницей? Эта официальная  футболка Hollow Knight  была разработана Ilustrata. (Унисекс XS-4X — цвет: темно-серый материал: поли-хлопок) Каждая футболка поставляется с бонусной наклейкой.</p>
+                        <p class="card-text text-primary">Цена: 36 $.</p>
                         <input type="hidden" name="vendor_code" value="445e">
                         <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0" min = "0"></p>
                     </li>
@@ -158,77 +159,55 @@
     <a href="#top" class="text-white text-decoration-none">Наверх</a>
 </footer>
 
-    <script>
-        async function fetchProducts() {
-            try {
-                const response = await fetch("shop.json");
-                if (!response.ok) {
-                    throw new Error(`Ошибка загрузки данных: ${response.statusText}`);
-                }
-                const products = await response.json();
-                return products;
-            } catch (error) {
-                console.error(error.message);
-                return [];
+<script>
+    async function fetchProducts() {
+        try {
+            const response = await fetch("shop.json");
+            if (!response.ok) {
+                throw new Error(`Ошибка загрузки данных: ${response.statusText}`);
             }
+            const products = await response.json();
+            return products;
+        } catch (error) {
+            console.error(error.message);
+            return [];
         }
+    }
 
-        async function renderProducts(sortBy = "title", searchQuery = "") {
-            const products = await fetchProducts();
-            let filteredProducts = [...products];
+    function renderProducts(products) {
+        const productContainer = document.getElementById("productContainer");
+        productContainer.innerHTML = "";
+        products.forEach(product => {
+            productContainer.innerHTML += `
+                <li class="card m-2 p-3 col-lg-3 col-md-4 col-sm-6">
+                    <img src="${product.img}" alt="${product.title}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">${product.title}</h5>
+                        <p class="card-text">${product.description}</p>
+                        <p class="card-text text-primary">Цена: ${product.price} р.</p>
+                        <button class="btn btn-primary">Заказать</button>
+                    </div>
+                </li>
+            `;
+        });
+    }
 
-            // Фильтрация
-            if (searchQuery) {
-                const query = searchQuery.toLowerCase();
-                filteredProducts = filteredProducts.filter(
-                    product => product.title.toLowerCase().includes(query) ||
-                               product.description.toLowerCase().includes(query) ||
-                               product.price.toString().includes(query)
-                );
+    async function handleSort() {
+        const sortByPrice = document.getElementById("sortPrice").checked;
+        const products = await fetchProducts();
+        const sortedProducts = [...products].sort((a, b) => {
+            if (sortByPrice) {
+                return a.price - b.price;
             }
+            return a.title.localeCompare(b.title);
+        });
+        renderProducts(sortedProducts);
+    }
+    (async function init() {
+        const products = await fetchProducts();
+        renderProducts(products.sort((a, b) => a.title.localeCompare(b.title)));
+    })();
+</script>
 
-            // Сортировка
-            filteredProducts.sort((a, b) => {
-                if (sortBy === "price") {
-                    return a.price - b.price;
-                }
-                return a.title.localeCompare(b.title);
-            });
-
-            // Рендеринг
-            const productContainer = document.getElementById("productContainer");
-            productContainer.innerHTML = "";
-            filteredProducts.forEach(product => {
-                productContainer.innerHTML += `
-                    <li class="card m-2 p-3 col-lg-3 col-md-4 col-sm-6">
-                        <img src="${product.img}" alt="${product.title}" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">${product.title}</h5>
-                            <p class="card-text">${product.description}</p>
-                            <p class="card-text text-primary">Цена: ${product.price} р.</p>
-                            <button class="btn btn-primary">Заказать</button>
-                        </div>
-                    </li>
-                `;
-            });
-        }
-
-        function handleSort() {
-            const sortByPrice = document.getElementById("sortPrice").checked;
-            const sortOption = sortByPrice ? "price" : "title";
-            const searchQuery = document.getElementById("filterSearch").value;
-            renderProducts(sortOption, searchQuery);
-        }
-
-        function handleSearch() {
-            const sortByPrice = document.getElementById("sortPrice").checked;
-            const sortOption = sortByPrice ? "price" : "title";
-            const searchQuery = document.getElementById("filterSearch").value;
-            renderProducts(sortOption, searchQuery);
-        }
-
-        // Инициализация при загрузке страницы
-        renderProducts();
-    </script>
 </body>
 </html>
